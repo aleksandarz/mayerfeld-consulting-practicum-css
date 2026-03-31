@@ -6,7 +6,7 @@ contact_page-grid {display: flex;align-items: center; }
 header {background-color: #1f2937; color: #f9faf8; padding: 20px; text-align: center;}
 footer {background-color: #1f2937; color: #f9faf8; padding: 20px; text-align: center;}  
 
-body {font-family:'roboto';}
+body {font-family:'roboto'; background-color: #e5e7eb;}
 
 main {margin: 0 auto; text-align: center;}
 
