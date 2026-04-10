@@ -1,0 +1,80 @@
+@font-face {
+    font-family:'roboto';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+}
+about_page-grid {display: flex;align-items: center; }
+
+header {background-color: #1f2937; color: #f9faf8; padding: 20px; text-align: center;}
+footer {background-color: #1f2937; color: #f9faf8; padding: 20px; text-align: center;}  
+
+body {font-family:'roboto';}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color:#e7e5eb;
+}
+h2 {color: #1f2937; text-decoration: underline; text-decoration-color: #1f2937; text-decoration-style: double ; text-decoration-thickness: 2px; }
+h3 {background-color: #1f2937; color: #f9faf8; margin-bottom: 10px; padding: 10px; border-radius: 10px; text-align: center;}
+h4{coolor: #1f2937; text-align: center;}
+p {border: 2px solid #1f2937; border-radius: 10px; padding: 20px; max-width: 600px; text-align: center;}
+
+.start {display: flex; flex-direction: column; align-items: center; margin-bottom: 20px; color:#1f2937; text-align: center;}
+
+.atmosphere {display: flex; flex-direction: column; align-items: center; margin-bottom: 20px; text-align: center;}
+.atmosphere img {border-radius: 10px; margin-bottom: 10px;}
+
+.searching {list-style-type: none; padding: 0; display: flex; gap: 40px;}
+.searching li {display: flex; flex-direction: column; align-items: center; text-align: center; max-width: 200px;}
+.searching img {border-radius: 10px; margin-bottom: 10px;}
+
+
+.exclusivity {display: flex; flex-direction: column; align-items: center; margin-bottom: 20px; color:#1f2937}
+
+.alchemy {display: flex; flex-direction: column; align-items: center; margin-bottom: 20px;} 
+.alchemy ul {list-style-type: none; padding: 0; display: flex; gap: 40px;}
+.alchemy li {display: flex; flex-direction: column; align-items: center; text-align: center; max-width: 200px;}
+.alchemy img {border-radius: 10px; margin-bottom: 10px;}    
+
+.hiddencheckbox {display: none;}
+
+.doors {
+  background-color: #1f2937;
+  padding: 20px;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+}
+.reveal {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  margin-top: 10px;
+  color: #d4af37; 
+}
+
+.hiddencheckbox:checked ~ .reveal {
+  opacity: 1;
+  max-height: 100px;
+  padding: 10px;
+}
+
+.image-container img {
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.image-container img:hover {
+  transform: scale(1.02);
+}
+
+.instruction {
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+.reveal ul { list-style-type: none; padding: 0; display: flex; gap: 40px; justify-content: center;}
