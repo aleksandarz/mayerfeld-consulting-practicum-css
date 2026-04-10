@@ -41,14 +41,14 @@
         </section>
         <section id="reservation">
             <h2> Reservations</h2>
-            <form id="availability">
+            <fieldset id="availability">
                 <legend>Check availability for your visit</legend>
                 <label for="date"> Date:</label>
-                <input type="date" id="date" name="date">
+                <input type="date" id="date" name="date" required>
                 <label for="time"> Time:</label>
-                <input type="time" id="time" name="time">
+                <input type="time" id="time" name="time" required>
                 <label for="guests"> Number of guests:</label>
-                <select type="" id="guests" name="guests" min="1" max="10">
+                <select id="guests" name="guests" >
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -60,8 +60,8 @@
                     <option value="9">9</option>
                     <option value="10">10</option>
                 </select>
-                <button type="submit">Check Availability</button>
-            </form>
+                <button type="submit" class="cta__button">Check Availability</button>
+            </fieldset>
 
         </section>
         <section id="contact">
