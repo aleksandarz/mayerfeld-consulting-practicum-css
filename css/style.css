@@ -1,0 +1,109 @@
+:root {
+    --color-bg-dark: #1f2937;
+    --color-bg-light: #e5e7eb;
+    --color-primary: #3882f6;
+    --color-text-light: #f9faf8;
+    --color-text-muted: #e5e7eb;
+    --color-text-dark: #1f2937;
+
+    --font-size-logo: 1.5rem;
+    --font-size-body: 1.125rem;
+    --font-size-heading-lg: 3rem;
+    --font-size-heading-md: 2.25rem;
+
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+    --font-weight-extra-bold: 800;
+
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-xl: 4rem;
+
+    --container-width: 1200px;
+    --section-padding: 5rem;
+
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+
+    --transition-fast: 0.3s ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: var(--color-bg-dark);
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.5rem 0 1.5rem;
+    align-items: center;
+}
+
+.header__logo {
+    color: var(--color-text-light);
+    font-size: var(--font-size-logo);
+}
+
+.nav__list {
+    display: none;
+    list-style: none;
+}
+
+.nav__link {
+    color: var(--color-text-muted);
+    font-size: var(--font-size-body);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+    position: relative;
+    display: inline-block;
+}
+
+.nav__link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -0.5rem;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-text-light);
+    transform: translateX(-50%);
+    transition: width var(--transition-fast);
+}
+
+.nav__link:hover {
+    color: var(--color-text-light);
+}
+
+.nav__link:hover::after {
+    width: 100%;
+}
+
+.footer {
+    background-color: var(--color-bg-dark);
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__text {
+    color: var(--color-text-muted);
+    font-size: var(--font-size-body);
+}
+
+@media (min-width: 768px) {
+    .nav__list {
+        display: flex;
+        gap: var(--space-md);
+    }
+}
+
