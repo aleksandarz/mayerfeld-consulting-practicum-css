@@ -1,3 +1,4 @@
+
 .menu-gallery-section {
     padding: var(--section-padding) 1.5rem;
     background-color: var(--color-bg-light);
@@ -19,6 +20,7 @@
     margin-top: var(--space-lg);
 }
 
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -26,6 +28,7 @@
     max-width: var(--container-width);
     margin: 0 auto 3rem auto;
 }
+
 
 .card {
     background: #ffffff;
@@ -63,6 +66,26 @@
     font-size: 1rem;
     font-weight: var(--font-weight-normal);
     line-height: 1.4;
+}
+
+
+.back-to-top-container {
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.cta__back-to-top {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-bold);
+    transition: color var(--transition-fast);
+    display: inline-block;
+}
+
+.cta__back-to-top:hover {
+    transform: translateY(-3px);
+    color: #1F2937;
 }
 
 .gallery-caption {
