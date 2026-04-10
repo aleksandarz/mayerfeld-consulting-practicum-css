@@ -80,7 +80,6 @@
     font-size: 1.1rem;
     margin-bottom: 0.4rem;
     font-weight: var(--font-weight-bold);
-    /* Zapobiegamy ucinaniu tytułów */
     word-wrap: break-word; 
 }
 
