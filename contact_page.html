@@ -27,56 +27,68 @@
     </header>
 
     <main>
-        <section id="visit">
-            <h2>Visit the bar</h2>
-            &#128205;
-            <adress> Via San Marco, 12 <br>
-                20121 Milano MI
-                Italy </adress>
-            <br>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.7079202425316!2d9.185881376476875!3d45.47440093275765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c6b4de21fe3b%3A0x3aac8afd1260fb0a!2sVia%20S.%20Marco%2C%2012%2C%2020121%20Milano%20MI%2C%20Italy!5e1!3m2!1sen!2sgr!4v1774952540257!5m2!1sen!2sgr"
-                width="600" height="450" style="border:0;" allowfullscreen="no" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </section>
-        <section id="reservation">
-            <h2> Reservations</h2>
-            <fieldset id="availability">
-                <legend>Check availability for your visit</legend>
-                <label for="date"> Date:</label>
-                <input type="date" id="date" name="date" required>
-                <label for="time"> Time:</label>
-                <input type="time" id="time" name="time" required>
-                <label for="guests"> Number of guests:</label>
-                <select id="guests" name="guests">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                </select>
-                <button type="submit" class="cta__button">Check Availability</button>
-            </fieldset>
 
+        <section class="hero">
+            <div class="hero_content">
+                <h1 class="hero_title">Get in Touch with Us</h1>
+                <p class="hero_subtitle">We'd love to hear from you!<br>
+                    Whether you have questions, want to make a reservation, <br>
+                    or just want to say hello, we're here for you.</p>
+            </div>
+            <div class="hero_image">
+                <img class="hero_image" src="./images/contact.jpg" alt="Contact Us">
+            </div>
         </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <adress id="contact_info">
-                <a href="tel:+39021234567"> &phone;Phone: +39 02 1234567</a>
-                <a href="mailto:info@velvetloungebar.com"> &#9993; Email: info@velvetloungebar.com</a>
-                <a href="https://www.instagram.com/velvetlounge/" target="_blank">
-                    <img src="images/Instagram_icon.png" alt="Instagram" width="40" height="40" aligmn="center">
-                    @velvetlounge
-                </a>
-            </adress>
+
+        <section class="contact">
+            <div id="visit">
+                 <h2>Visit the bar</h2>
+                &#128205;
+                <adress> Via San Marco, 12 <br>
+                    20121 Milano MI
+                    Italy </adress>
+                <br>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.7079202425316!2d9.185881376476875!3d45.47440093275765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c6b4de21fe3b%3A0x3aac8afd1260fb0a!2sVia%20S.%20Marco%2C%2012%2C%2020121%20Milano%20MI%2C%20Italy!5e1!3m2!1sen!2sgr!4v1774952540257!5m2!1sen!2sgr"
+                    width="600" height="450" style="border:0;" allowfullscreen="yes" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" id="map">
+                </iframe>
+            </div>
+            <div class="reservation">
+                <h2> Reservations</h2>
+                <fieldset id="availability">
+                    <legend>Check availability for your visit</legend>
+                    <label for="date"> Date:</label>
+                    <input type="date" id="date" name="date" required>
+                    <label for="time"> Time:</label>
+                    <input type="time" id="time" name="time" required>
+                    <label for="guests"> Number of guests:</label>
+                    <select id="guests" name="guests">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                    <button type="submit" class="cta__button">Check Availability</button>
+                </fieldset>
+                
+                <h2>Contact Us</h2>
+                <adress id="contact_info">
+                    <a href="tel:+39021234567"> &phone;Phone: +39 02 1234567</a>
+                    <a href="mailto:info@velvetloungebar.com"> &#9993; Email: info@velvetloungebar.com</a>
+                    <a href="https://www.instagram.com/velvetlounge/" target="_blank">
+                        <img src="images/Instagram_icon.png" alt="Instagram" width="40" height="40" aligmn="center">
+                        @velvetlounge
+                    </a>
+                </adress>
+            </div>
             </secion>
-            <a href="#top" class="cta__back-to-top">Back to Top ↑</a>
     </main>
 
     <footer class="footer">
