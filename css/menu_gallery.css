@@ -1,36 +1,51 @@
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100vw;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 
 .menu-gallery-section {
-    padding: var(--section-padding) 1.5rem;
-    background-color: var(--color-bg-light);
+    padding: var(--section-padding, 3rem) 1.5rem;
+    background-color: var(--color-bg-light, #f8f9fa);
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .menu-gallery-section__title {
-    color: var(--color-text-dark);
-    font-size: var(--font-size-heading-lg);
-    font-weight: var(--font-weight-extra-bold);
-    margin-bottom: var(--space-md);
+    color: var(--color-text-dark, #212529);
+    font-size: var(--font-size-heading-lg, 2.5rem);
+    font-weight: var(--font-weight-extra-bold, 800);
+    margin-bottom: var(--space-md, 1.5rem);
+    text-align: center;
 }
 
 .section-subtitle {
-    color: var(--color-text-dark);
-    font-size: var(--font-size-heading-md);
-    margin-bottom: var(--space-lg);
-    margin-top: var(--space-lg);
-    display: block; 
+    color: var(--color-text-dark, #212529);
+    font-size: var(--font-size-heading-md, 1.8rem);
+    margin-bottom: var(--space-lg, 3rem);
+    margin-top: var(--space-lg, 3rem);
+    display: block;
+    text-align: center;
 }
-
 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 2rem;
-    max-width: var(--container-width);
+    max-width: var(--container-width, 1200px);
     margin: 0 auto 3rem auto;
-    align-items: stretch; 
+    align-items: stretch;
+    width: 100%;
+    box-sizing: border-box;
 }
-
 
 .card {
     background: #ffffff;
@@ -38,11 +53,9 @@
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    
- 
     display: flex;
     flex-direction: column;
-    height: 100%; 
+    height: 100%;
 }
 
 .card:hover {
@@ -50,25 +63,23 @@
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
-
 .card__image {
     width: 100%;
     height: 200px; 
     object-fit: cover;
     transition: transform 0.5s ease;
-    flex-shrink: 0; 
+    flex-shrink: 0;
+    display: block;
 }
 
 .card:hover .card__image {
     transform: scale(1.05);
 }
 
-
 .card__content {
     padding: 1.2rem;
     text-align: left;
     background: #ffffff;
-    
     display: flex;
     flex-direction: column;
     flex-grow: 1; 
@@ -76,32 +87,30 @@
 }
 
 .card__title {
-    color: var(--color-text-dark);
+    color: var(--color-text-dark, #212529);
     font-size: 1.1rem;
     margin-bottom: 0.4rem;
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold, 700);
     word-wrap: break-word; 
 }
 
 .card__text {
     color: #4b5563;
     font-size: 0.85rem;
-    font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal, 400);
     line-height: 1.4;
     margin: 0;
 }
 
-
 .gallery-caption {
-    color: var(--color-text-dark);
+    color: var(--color-text-dark, #212529);
     font-size: 0.9rem;
     text-align: center;
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold, 700);
     margin: 0;
     margin-top: auto; 
     padding-top: 0.5rem;
 }
-
 
 .back-to-top-container {
     margin-top: 3rem;
@@ -109,18 +118,18 @@
 }
 
 .cta__back-to-top {
-    color: var(--color-primary);
+    color: var(--color-primary, #d4af37);
     text-decoration: none;
     font-size: 1rem;
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold, 700);
     padding: 8px 16px;
-    border: 2px solid var(--color-primary);
+    border: 2px solid var(--color-primary, #d4af37);
     border-radius: 30px;
     transition: all 0.3s ease;
     display: inline-block;
 }
 
 .cta__back-to-top:hover {
-    background-color: var(--color-primary);
+    background-color: var(--color-primary, #d4af37);
     color: #ffffff;
 }
