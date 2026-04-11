@@ -93,6 +93,7 @@ body {
     font-weight: var(--font-weight-bold);
     transition: color var(--transition-fast);
     cursor: pointer;
+    align-self: right;
 }
 
 .cta__back-to-top:hover {

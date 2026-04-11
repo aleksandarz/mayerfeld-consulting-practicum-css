@@ -36,7 +36,7 @@ main {
     padding: 40px 0;
     background-color: #1f2937;
     color: #f9faf8;
-
+    max-height: 400px;
 }
 
 .hero_content {
@@ -49,12 +49,8 @@ main {
 }
 
 .hero_image {
-    display: flex;
-    flex-direction: column;
-    align-items: right;
-    width: 400px;
-    height: auto;
-    border-radius: 10px;
+    width: auto;
+    height: 20rem;
 }
 
 .hero_title {
@@ -143,6 +139,20 @@ button {
     font-size: 18px;
     color: #1f2937;
     font-weight: bold;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+
+    background-color: #1f2937;
+    color: #f9faf8;
+    padding: 12px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
