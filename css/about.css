@@ -252,22 +252,9 @@ p {
   font-size: 18px;
 }
 
-.back-to-top {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  z-index: 1000;
-
-  background-color: #1f2937;
-  color: #f9faf8;
-  padding: 12px;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
 @media (max-width: 768px) {
   .hero {
+    display: flex;
     flex-direction: column;
     text-align: center;
   }
